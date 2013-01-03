@@ -30,15 +30,15 @@ module Nettle
     end
 
     def delete(url, options = {}, &block)
-      request(:Head, url, options, &block)
+      request(:Delete, url, options, &block)
     end
 
     def trace(url, options = {}, &block)
-      request(:Head, url, options, &block)
+      request(:Trace, url, options, &block)
     end
 
     def options(url, options = {}, &block)
-      request(:Get, url, options, &block)
+      request(:Options, url, options, &block)
     end
   end
 end
