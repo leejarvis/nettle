@@ -19,7 +19,6 @@ module Nettle
     response
   end
 
-
   def make_request(method, uri, options)
     klass = Net::HTTP.const_get(method.to_s.downcase.capitalize)
     request = klass.new(uri.request_uri)

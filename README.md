@@ -1,29 +1,18 @@
 # Nettle
 
-TODO: Write a gem description
+A wrapper around `net/http` for a simplified API. Extremely feature lacking at
+the moment.
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'nettle'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install nettle
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+response = Nettle.get("http://google.com")
+response.body #=> lots of html
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+response = Nettle.post("http://google.com", foo: "bar")
+response.code #=> "405"
+```
