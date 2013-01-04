@@ -4,9 +4,9 @@ Gem::Specification.new do |gem|
   gem.version       = '0.0.1'
   gem.authors       = ['Lee Jarvis']
   gem.email         = ['ljjarvis@gmail.com']
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ''
+  gem.description   = 'A wrapper around net/http for a simplified API (feature lacking)'
+  gem.summary       = 'A tiny wrapper around net/http'
+  gem.homepage      = 'https://github.com/injekt/nettle'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
